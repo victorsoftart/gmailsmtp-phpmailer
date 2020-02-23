@@ -39,7 +39,7 @@ __Email screen__
     <img src="screenshots/email.png">
 </p>
 
-## Issues
+## Possible Errors And Exceptions
 When you try to send email in your local environment, there might be this kind of problem.
 
 ### Antivirus software
@@ -47,7 +47,8 @@ You need to properly configure your antivirus software to exclude blocking mails
 
 mail works only while deactivating avast
 
-```1. Open Avast
+```
+1. Open Avast
 2. Click on 'Settings' (upper right corner of page)
 3. Click on 'Troubleshooting'
 4. Click on 'Redirect Settings'
@@ -56,3 +57,15 @@ mail works only while deactivating avast
 7. Click 'OK'
 8. Close Avast
 ```
+
+### SMTP Server Error: 5.5.1 Authentication Required. Learn More At 530 5.5.1
+```
+SMTP server error: 5.5.1 Authentication Required. Learn more at 530 5.5.1 
+```
+If you have encountered this error, then this is mostly because you have enabled 2FA on your Gmail account or you have not enabled access to Less Secure App. Read the above prerequisites to address this problem.
+
+### Message: Fsockopen(): Unable To Connect To Ssl://Smtp.Gmail.Com
+```
+Message: fsockopen(): unable to connect to ssl://smtp.gmail.com:25 (A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. )
+```
+If you have encountered this error, then this is mostly because of SSL issue. You need to enable SSL in php.ini file of your server configuration. In case you are using a XAMPP server, then please check whether it is enabled or not. You will get that in PHP info.
