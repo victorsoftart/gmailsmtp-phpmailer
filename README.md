@@ -27,15 +27,27 @@ To use Gmail's SMTP server, you will need the following settings for your outgoi
 - Password: your Gmail password
 - Port: 465 (SSL required) or 587 (TLS required)
 
+## Screenshots
+
+__Form screen__
+<p align="center">
+    <img src="screenshots/form.png">
+</p>
+
+__Email screen__
+<p align="center">
+    <img src="screenshots/email.png">
+</p>
+
 ## Issues
 When you try to send email in your local environment, there might be this kind of problem.
 
 ### Antivirus software
 You need to properly configure your antivirus software to exclude blocking mails sent to smtp.gmail.com.
 
-e.g. Mail works only while deactivating avast
-```
-1. Open Avast
+mail works only while deactivating avast
+
+```1. Open Avast
 2. Click on 'Settings' (upper right corner of page)
 3. Click on 'Troubleshooting'
 4. Click on 'Redirect Settings'
